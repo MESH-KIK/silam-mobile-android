@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F5"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Card Header / Logo SILAM -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            app:cardBackgroundColor="#2E4A85"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="28dp">
+
+                <!-- Logo SILAM (Akses Rahasia: Long Click / Tekan Lama di sini) -->
+                <ImageView
+                    android:id="@+id/imgLogoSilam"
+                    android:layout_width="64dp"
+                    android:layout_height="68dp"
+                    android:clickable="true"
+                    android:contentDescription="SILAM Logo"
+                    android:focusable="true"
+                    android:src="@drawable/silam_logo" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:background="#E2F1A7"
+                    android:fontFamily="@font/inter_bold"
+                    android:letterSpacing="0.05"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="4dp"
+                    android:text="SMART LAUNDRY ECOSYSTEM"
+                    android:textColor="#2E4A85"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="SILAM"
+                    android:textColor="#FFFFFF"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/inter"
+                    android:text="Sistem Informasi Laundry Mandiri"
+                    android:textColor="#D3E0FA"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- ViewPager2 untuk Slider Fitur Mandiri -->
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerOnboarding"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Dynamic Page Indicators -->
+        <LinearLayout
+            android:id="@+id/layoutDotsIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingVertical="12dp" />
+
+        <!-- Footer Note -->
+        <TextView
+            android:id="@+id/tvFooterWebPortal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:paddingHorizontal="16dp"
+            android:text="Catatan: Akses Pemilik Toko &amp; Pengaturan Lanjutan dapat dikelola melalui Portal Web SILAM."
+            android:textColor="#2D2D2D"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</ScrollView>

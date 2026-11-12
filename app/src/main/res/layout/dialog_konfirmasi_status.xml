@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Header Dialog -->
+    <TextView
+        android:id="@+id/tvDialogJudul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Konfirmasi Perubahan Status"
+        android:textColor="#2E4A85"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvDialogNomorNota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/inter"
+        android:text="Nomor Nota: #SILAM-xxxx"
+        android:textColor="#64748B"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="12dp"
+        android:background="#E2E8F0" />
+
+    <!-- Informasi Pelanggan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Data Pelanggan:"
+        android:textColor="#2D2D2D"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDialogNamaPelanggan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Nama Pelanggan"
+        android:textColor="#2E4A85"
+        android:textSize="14sp" />
+
+    <!-- Detail Layanan yang Dipilih -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Layanan / Item Cucian:"
+        android:textColor="#2D2D2D"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tvDialogDetailLayanan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#F1F5F9"
+        android:fontFamily="@font/inter"
+        android:padding="10dp"
+        android:text="- Layanan"
+        android:textColor="#334155"
+        android:textSize="12sp" />
+
+    <!-- Status Kerja Baru -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="#D3E0FA"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter"
+            android:text="Status Baru: "
+            android:textColor="#2E4A85"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvDialogStatusBaru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Sedang Dicuci"
+            android:textColor="#2E4A85"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- INPUT CATATAN PEGAWAI (OPSIONAL) -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Catatan Pegawai (Opsional):"
+        android:textColor="#2D2D2D"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/etDialogCatatan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@android:drawable/editbox_background"
+        android:fontFamily="@font/inter"
+        android:hint="Contoh: Ada noda membandel di kantong kanan..."
+        android:inputType="textMultiLine"
+        android:minLines="2"
+        android:textColor="#2D2D2D"
+        android:textColorHint="#94A3B8"
+        android:textSize="12sp" />
+
+</LinearLayout>

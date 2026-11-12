@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- State Aktif (Kapsul Biru) -->
+    <item android:state_selected="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#2E4A85" />
+            <corners android:radius="4dp" />
+        </shape>
+    </item>
+
+    <!-- State Tidak Aktif (Lingkaran Redup) -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#D3E0FA" />
+        </shape>
+    </item>
+</selector>

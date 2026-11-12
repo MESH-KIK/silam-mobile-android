@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8FAFC">
+
+    <!-- Container Utama Fragment -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottomNavDivider" />
+
+    <!-- Garis Batas Atas Navigasi yang Tipis & Clean -->
+    <View
+        android:id="@+id/bottomNavDivider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/bottomNavigation"
+        android:background="#E2E8F0" />
+
+    <!-- Bottom Navigation Bar Modern -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:elevation="8dp"
+        app:elevation="8dp"
+        app:itemActiveIndicatorStyle="@style/CustomBottomNavIndicator"
+        app:itemIconSize="20dp"
+        app:itemIconTint="#0284C7"
+        app:itemPaddingBottom="6dp"
+        app:itemPaddingTop="6dp"
+        app:itemRippleColor="#E0F2FE"
+        app:itemTextColor="#0284C7"
+        app:labelVisibilityMode="labeled"
+        app:menu="@menu/bottom_nav_menu" />
+
+</RelativeLayout>

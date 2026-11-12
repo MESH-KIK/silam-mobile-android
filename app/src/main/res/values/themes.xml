@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Base.Theme.SILAM" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Application theme -->
+    <style name="Theme.SILAM" parent="Base.Theme.SILAM" />
+
+    <!-- Style Kustom Indikator Bottom Navigation Material 3 -->
+    <style name="CustomBottomNavIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <item name="android:color">#E0F2FE</item>
+        <item name="android:layout_width">56dp</item>
+        <item name="height">32dp</item>
+        <item name="marginHorizontal">12dp</item>
+    </style>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Saat Menu Dipilih / Aktif -->
+    <item android:state_checked="true">
+        <shape android:shape="rectangle">
+            <solid android:color="#E0F2FE" />
+            <corners android:radius="16dp" />
+        </shape>
+    </item>
+    <!-- Saat Tidak Dipilih -->
+    <item android:state_checked="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</selector>

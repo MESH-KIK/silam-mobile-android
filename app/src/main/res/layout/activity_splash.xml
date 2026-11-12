@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03172E">
+
+    <!-- Container Logo & Pulse Effect -->
+    <RelativeLayout
+        android:id="@+id/containerLogo"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerInParent="true">
+
+        <!-- Background Lingkaran Pulse -->
+        <View
+            android:id="@+id/viewPulse"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:alpha="0"
+            android:background="@drawable/bg_splash_circle" />
+
+        <!-- Logo Utama SILAM -->
+        <ImageView
+            android:id="@+id/imgLogoSilam"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:contentDescription="SILAM Logo"
+            android:src="@drawable/silam_logo" />
+    </RelativeLayout>
+
+    <!-- Teks Brand & Tagline -->
+    <LinearLayout
+        android:id="@+id/containerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/containerLogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:alpha="0"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="SILAM"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#1E3A5F"
+            android:fontFamily="@font/inter_bold"
+            android:letterSpacing="0.08"
+            android:paddingHorizontal="12dp"
+            android:paddingVertical="4dp"
+            android:text="SMART LAUNDRY ECOSYSTEM"
+            android:textColor="#38BDF8"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!-- Interactive Loading Section (Di Atas Footer) -->
+    <LinearLayout
+        android:id="@+id/containerLoading"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvFooter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="28dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- ProgressBar Tipis Modern -->
+        <ProgressBar
+            android:id="@+id/progressBarSplash"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="4dp"
+            android:max="100"
+            android:progress="0"
+            android:progressDrawable="@android:drawable/progress_horizontal"
+            android:progressBackgroundTint="#1E293B"
+            android:progressTint="#38BDF8" />
+
+        <!-- Teks Status Dinamis -->
+        <TextView
+            android:id="@+id/tvStatusLoading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Menyiapkan sistem..."
+            android:textColor="#94A3B8"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+    <!-- Footer Copyright / Version -->
+    <TextView
+        android:id="@+id/tvFooter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/inter"
+        android:text="Powered by SILAM v1.0"
+        android:textColor="#64748B"
+        android:textSize="11sp" />
+
+</RelativeLayout>

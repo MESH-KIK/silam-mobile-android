@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Icon Circle (Ukuran wadah & icon diperbaiki agar pas dan proporsional) -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            app:cardBackgroundColor="#D3E0FA"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/imgSlideIcon"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/stat_notify_sync"
+                app:tint="#2E4A85" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Tagline -->
+        <TextView
+            android:id="@+id/tvSlideTagline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/inter"
+            android:text="FITUR MANDIRI #1"
+            android:textColor="#2E4A85"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tvSlideTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="Cek Status Laundry Mandiri Real-Time"
+            android:textColor="#2D2D2D"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tvSlideDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/inter"
+            android:gravity="center"
+            android:lineSpacingExtra="2dp"
+            android:text="Lacak setiap tahapan pengerjaan pakaian mulai dari Diterima, Dicuci, Dikeringkan, hingga Siap Diambil tanpa repot menelepon kasir."
+            android:textColor="#2D2D2D"
+            android:textSize="11sp" />
+
+        <!-- Quick Access Card (Punya Nota) -->
+        <LinearLayout
+            android:id="@+id/layoutNotaAction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="#FAF8F5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="12dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_camera"
+                app:tint="#2E4A85" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:text="Punya nota laundry?"
+                    android:textColor="#2D2D2D"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:text="Langsung cek status tanpa login"
+                    android:textColor="#2E4A85"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnCekStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:backgroundTint="#8FAEEA"
+                android:fontFamily="@font/inter_bold"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="0dp"
+                android:text="Cek Status"
+                android:textAllCaps="false"
+                android:textColor="#2E4A85"
+                android:textSize="11sp"
+                app:cornerRadius="8dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
